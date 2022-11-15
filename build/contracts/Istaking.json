@@ -1,0 +1,346 @@
+{
+  "contractName": "Istaking",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "synthAddress",
+          "type": "address"
+        }
+      ],
+      "name": "GetSynthInfo",
+      "outputs": [
+        {
+          "internalType": "contract Isynth",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"synthAddress\",\"type\":\"address\"}],\"name\":\"GetSynthInfo\",\"outputs\":[{\"internalType\":\"contract Isynth\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/Istaking.sol\":\"Istaking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/Istaking.sol\":{\"keccak256\":\"0x8f6dba358c87cd9f2db934702eb13d08d1080ba618ad7868bd7411920ad1dc5f\",\"license\":\"Unlicensed\",\"urls\":[\"bzz-raw://ac376c86c97aa40ce3cbe67ad918e12dc3c0629b8b8ac0ef996aa6d3f447b5ac\",\"dweb:/ipfs/QmarjChuPEoy7ezSjRdjF5Moi8ZVvN1vLRSWeBHnoegtwk\"]},\"project:/contracts/interfaces/Isynth.sol\":{\"keccak256\":\"0xbd9404b7d39b5953ab5dfb250ecaba1fde7e92b3e34b8260dcbe63ee70996e14\",\"license\":\"Unlicensed\",\"urls\":[\"bzz-raw://ae8ec679f373b9ef9dad9045d84743865b9d8a6a884361c5b606ee8597fd8fab\",\"dweb:/ipfs/QmRucRzo1a5f7uSrqfBreey9oNpw7C9hM8JC53nNQY9ZFQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicensed\npragma solidity 0.7.5;\n\nimport \"./Isynth.sol\";\ninterface Istaking{\n    function GetSynthInfo(address synthAddress) external view returns(Isynth);\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/Istaking.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/Istaking.sol",
+    "exportedSymbols": {
+      "Istaking": [
+        2087
+      ],
+      "Isynth": [
+        2144
+      ]
+    },
+    "id": 2088,
+    "license": "Unlicensed",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2078,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:22:33"
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/Isynth.sol",
+        "file": "./Isynth.sol",
+        "id": 2079,
+        "nodeType": "ImportDirective",
+        "scope": 2088,
+        "sourceUnit": 2145,
+        "src": "63:22:33",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2087,
+        "linearizedBaseContracts": [
+          2087
+        ],
+        "name": "Istaking",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "2a3d2689",
+            "id": 2086,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetSynthInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2082,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2081,
+                  "mutability": "mutable",
+                  "name": "synthAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2086,
+                  "src": "132:20:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2080,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:33",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:22:33"
+            },
+            "returnParameters": {
+              "id": 2085,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2084,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2086,
+                  "src": "176:6:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Isynth_$2144",
+                    "typeString": "contract Isynth"
+                  },
+                  "typeName": {
+                    "id": 2083,
+                    "name": "Isynth",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2144,
+                    "src": "176:6:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Isynth_$2144",
+                      "typeString": "contract Isynth"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "175:8:33"
+            },
+            "scope": 2087,
+            "src": "110:74:33",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2088,
+        "src": "86:100:33"
+      }
+    ],
+    "src": "39:148:33"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/Istaking.sol",
+      "exportedSymbols": {
+        "Istaking": [
+          2087
+        ],
+        "Isynth": [
+          2144
+        ]
+      },
+      "license": "Unlicensed"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 2078,
+        "name": "PragmaDirective",
+        "src": "39:22:33"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2145,
+          "absolutePath": "project:/contracts/interfaces/Isynth.sol",
+          "file": "./Isynth.sol",
+          "scope": 2088,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2079,
+        "name": "ImportDirective",
+        "src": "63:22:33"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2087
+          ],
+          "name": "Istaking",
+          "scope": 2088
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "2a3d2689",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "GetSynthInfo",
+              "scope": 2087,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "synthAddress",
+                      "scope": 2086,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2080,
+                        "name": "ElementaryTypeName",
+                        "src": "132:7:33"
+                      }
+                    ],
+                    "id": 2081,
+                    "name": "VariableDeclaration",
+                    "src": "132:20:33"
+                  }
+                ],
+                "id": 2082,
+                "name": "ParameterList",
+                "src": "131:22:33"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 2086,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract Isynth",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "Isynth",
+                          "referencedDeclaration": 2144,
+                          "type": "contract Isynth"
+                        },
+                        "id": 2083,
+                        "name": "UserDefinedTypeName",
+                        "src": "176:6:33"
+                      }
+                    ],
+                    "id": 2084,
+                    "name": "VariableDeclaration",
+                    "src": "176:6:33"
+                  }
+                ],
+                "id": 2085,
+                "name": "ParameterList",
+                "src": "175:8:33"
+              }
+            ],
+            "id": 2086,
+            "name": "FunctionDefinition",
+            "src": "110:74:33"
+          }
+        ],
+        "id": 2087,
+        "name": "ContractDefinition",
+        "src": "86:100:33"
+      }
+    ],
+    "id": 2088,
+    "name": "SourceUnit",
+    "src": "39:148:33"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.556Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

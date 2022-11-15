@@ -1,0 +1,314 @@
+{
+  "contractName": "IWarmup",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount_",
+          "type": "uint256"
+        }
+      ],
+      "name": "retrieve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker_\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"retrieve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IWarmup.sol\":\"IWarmup\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IWarmup.sol\":{\"keccak256\":\"0x0d2c94f74e71512eed3b4e93f2a76050676cb131bb99b727dcd2a1f47fa52650\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://5cef27c80994513b919b7c6f30545435b790a56367ae38256b904bf0b734152a\",\"dweb:/ipfs/QmfS7K7dNFFRa7hRxKgcmaKSY4Wdvj2TDFEECtwLkeWUns\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.7.5;\n\n\ninterface IWarmup {\n    function retrieve( address staker_, uint amount_ ) external;\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/IWarmup.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IWarmup.sol",
+    "exportedSymbols": {
+      "IWarmup": [
+        1981
+      ]
+    },
+    "id": 1982,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1973,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:22:31"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1981,
+        "linearizedBaseContracts": [
+          1981
+        ],
+        "name": "IWarmup",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "c3a2a665",
+            "id": 1980,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "retrieve",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1978,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1975,
+                  "mutability": "mutable",
+                  "name": "staker_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1980,
+                  "src": "114:15:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1974,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "114:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1977,
+                  "mutability": "mutable",
+                  "name": "amount_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1980,
+                  "src": "131:12:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1976,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "131:4:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "112:33:31"
+            },
+            "returnParameters": {
+              "id": 1979,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "154:0:31"
+            },
+            "scope": 1981,
+            "src": "95:60:31",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1982,
+        "src": "71:86:31"
+      }
+    ],
+    "src": "46:112:31"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IWarmup.sol",
+      "exportedSymbols": {
+        "IWarmup": [
+          1981
+        ]
+      },
+      "license": "AGPL-3.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 1973,
+        "name": "PragmaDirective",
+        "src": "46:22:31"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1981
+          ],
+          "name": "IWarmup",
+          "scope": 1982
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "c3a2a665",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "retrieve",
+              "scope": 1981,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "staker_",
+                      "scope": 1980,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1974,
+                        "name": "ElementaryTypeName",
+                        "src": "114:7:31"
+                      }
+                    ],
+                    "id": 1975,
+                    "name": "VariableDeclaration",
+                    "src": "114:15:31"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount_",
+                      "scope": 1980,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 1976,
+                        "name": "ElementaryTypeName",
+                        "src": "131:4:31"
+                      }
+                    ],
+                    "id": 1977,
+                    "name": "VariableDeclaration",
+                    "src": "131:12:31"
+                  }
+                ],
+                "id": 1978,
+                "name": "ParameterList",
+                "src": "112:33:31"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1979,
+                "name": "ParameterList",
+                "src": "154:0:31"
+              }
+            ],
+            "id": 1980,
+            "name": "FunctionDefinition",
+            "src": "95:60:31"
+          }
+        ],
+        "id": 1981,
+        "name": "ContractDefinition",
+        "src": "71:86:31"
+      }
+    ],
+    "id": 1982,
+    "name": "SourceUnit",
+    "src": "46:112:31"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.550Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "contractName": "IStakingHelper",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "stake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_recipient\",\"type\":\"address\"}],\"name\":\"stake\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IStakingHelper.sol\":\"IStakingHelper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IStakingHelper.sol\":{\"keccak256\":\"0x0525c73f5567f4bc5b387962999eb3c6a6ee7a28b0ca3b26f0d7053005b54425\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://8df4b2e84cba99a28ee1c3883b73c4da21841b10146c962763314b522b641015\",\"dweb:/ipfs/QmPrU5N32Zxbm5Wya1Mfy8yzjkeCdCxmgu3dP1dnFfX5PK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.7.5;\n\ninterface IStakingHelper {\n    function stake( uint _amount, address _recipient ) external;\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/IStakingHelper.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IStakingHelper.sol",
+    "exportedSymbols": {
+      "IStakingHelper": [
+        1908
+      ]
+    },
+    "id": 1909,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1900,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:22:27"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1908,
+        "linearizedBaseContracts": [
+          1908
+        ],
+        "name": "IStakingHelper",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "7acb7757",
+            "id": 1907,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stake",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1905,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1902,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1907,
+                  "src": "117:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1901,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "117:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1904,
+                  "mutability": "mutable",
+                  "name": "_recipient",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1907,
+                  "src": "131:18:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1903,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "131:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:36:27"
+            },
+            "returnParameters": {
+              "id": 1906,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "160:0:27"
+            },
+            "scope": 1908,
+            "src": "101:60:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1909,
+        "src": "70:93:27"
+      }
+    ],
+    "src": "46:118:27"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IStakingHelper.sol",
+      "exportedSymbols": {
+        "IStakingHelper": [
+          1908
+        ]
+      },
+      "license": "AGPL-3.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 1900,
+        "name": "PragmaDirective",
+        "src": "46:22:27"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1908
+          ],
+          "name": "IStakingHelper",
+          "scope": 1909
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "7acb7757",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "stake",
+              "scope": 1908,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_amount",
+                      "scope": 1907,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 1901,
+                        "name": "ElementaryTypeName",
+                        "src": "117:4:27"
+                      }
+                    ],
+                    "id": 1902,
+                    "name": "VariableDeclaration",
+                    "src": "117:12:27"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_recipient",
+                      "scope": 1907,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1903,
+                        "name": "ElementaryTypeName",
+                        "src": "131:7:27"
+                      }
+                    ],
+                    "id": 1904,
+                    "name": "VariableDeclaration",
+                    "src": "131:18:27"
+                  }
+                ],
+                "id": 1905,
+                "name": "ParameterList",
+                "src": "115:36:27"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1906,
+                "name": "ParameterList",
+                "src": "160:0:27"
+              }
+            ],
+            "id": 1907,
+            "name": "FunctionDefinition",
+            "src": "101:60:27"
+          }
+        ],
+        "id": 1908,
+        "name": "ContractDefinition",
+        "src": "70:93:27"
+      }
+    ],
+    "id": 1909,
+    "name": "SourceUnit",
+    "src": "46:118:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.543Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

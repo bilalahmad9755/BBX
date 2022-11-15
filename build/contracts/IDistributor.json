@@ -1,0 +1,255 @@
+{
+  "contractName": "IDistributor",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "distribute",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"distribute\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IDistributor.sol\":\"IDistributor\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IDistributor.sol\":{\"keccak256\":\"0x1c2e3dbf6378560687e4c13697c948b1bd55a6065d93fdf5b6dae1582495d367\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://69027b11a22ee2acb30d7e2ee87cfba713cb46885a5fa281bbc2c84a93329555\",\"dweb:/ipfs/Qmb53ADnGx8gYoiBKhxNQBXQwswvYdTFmgWjSodkiqWvVR\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\npragma solidity 0.7.5;\n\ninterface IDistributor {\n    function distribute() external returns ( bool );\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/IDistributor.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IDistributor.sol",
+    "exportedSymbols": {
+      "IDistributor": [
+        1731
+      ]
+    },
+    "id": 1732,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1725,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:22:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1731,
+        "linearizedBaseContracts": [
+          1731
+        ],
+        "name": "IDistributor",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "e4fc6b6d",
+            "id": 1730,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distribute",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:2:21"
+            },
+            "returnParameters": {
+              "id": 1729,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1728,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1730,
+                  "src": "140:4:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1727,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "140:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:8:21"
+            },
+            "scope": 1731,
+            "src": "99:48:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1732,
+        "src": "70:79:21"
+      }
+    ],
+    "src": "46:104:21"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IDistributor.sol",
+      "exportedSymbols": {
+        "IDistributor": [
+          1731
+        ]
+      },
+      "license": "AGPL-3.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 1725,
+        "name": "PragmaDirective",
+        "src": "46:22:21"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1731
+          ],
+          "name": "IDistributor",
+          "scope": 1732
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "e4fc6b6d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "distribute",
+              "scope": 1731,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1726,
+                "name": "ParameterList",
+                "src": "118:2:21"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1730,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 1727,
+                        "name": "ElementaryTypeName",
+                        "src": "140:4:21"
+                      }
+                    ],
+                    "id": 1728,
+                    "name": "VariableDeclaration",
+                    "src": "140:4:21"
+                  }
+                ],
+                "id": 1729,
+                "name": "ParameterList",
+                "src": "138:8:21"
+              }
+            ],
+            "id": 1730,
+            "name": "FunctionDefinition",
+            "src": "99:48:21"
+          }
+        ],
+        "id": 1731,
+        "name": "ContractDefinition",
+        "src": "70:79:21"
+      }
+    ],
+    "id": 1732,
+    "name": "SourceUnit",
+    "src": "46:104:21"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.530Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

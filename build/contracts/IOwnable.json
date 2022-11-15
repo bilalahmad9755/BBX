@@ -1,0 +1,466 @@
+{
+  "contractName": "IOwnable",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner_",
+          "type": "address"
+        }
+      ],
+      "name": "pushManagement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pullManagement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pullManagement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner_\",\"type\":\"address\"}],\"name\":\"pushManagement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IOwnable.sol\":\"IOwnable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IOwnable.sol\":{\"keccak256\":\"0x17b34c3d76f51cb6100b7e9b0d133b1b69aab2b44b00e96623184fbecd17510f\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://ecbe3d35bd7c3e00492c7e27db7fdf30772db58ad3603bccd1675064946b5032\",\"dweb:/ipfs/QmVUyFSXTM7v5DE3Upkogtc1cM8js2fFYh5or1UJmxgDfX\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0\npragma solidity 0.7.5;\n\n\ninterface IOwnable {\n  function owner() external view returns (address);\n  \n  function pushManagement( address newOwner_ ) external;\n  \n  function pullManagement() external;\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/IOwnable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IOwnable.sol",
+    "exportedSymbols": {
+      "IOwnable": [
+        1848
+      ]
+    },
+    "id": 1849,
+    "license": "AGPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1834,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:22:24"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1848,
+        "linearizedBaseContracts": [
+          1848
+        ],
+        "name": "IOwnable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8da5cb5b",
+            "id": 1839,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1835,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:24"
+            },
+            "returnParameters": {
+              "id": 1838,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1837,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1839,
+                  "src": "125:7:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1836,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:24",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "124:9:24"
+            },
+            "scope": 1848,
+            "src": "85:49:24",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "46f68ee9",
+            "id": 1844,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pushManagement",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1842,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1841,
+                  "mutability": "mutable",
+                  "name": "newOwner_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1844,
+                  "src": "165:17:24",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1840,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "165:7:24",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "163:21:24"
+            },
+            "returnParameters": {
+              "id": 1843,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:0:24"
+            },
+            "scope": 1848,
+            "src": "140:54:24",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5a96ac0a",
+            "id": 1847,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pullManagement",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1845,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:2:24"
+            },
+            "returnParameters": {
+              "id": 1846,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "234:0:24"
+            },
+            "scope": 1848,
+            "src": "200:35:24",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1849,
+        "src": "62:175:24"
+      }
+    ],
+    "src": "37:201:24"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IOwnable.sol",
+      "exportedSymbols": {
+        "IOwnable": [
+          1848
+        ]
+      },
+      "license": "AGPL-3.0"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 1834,
+        "name": "PragmaDirective",
+        "src": "37:22:24"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1848
+          ],
+          "name": "IOwnable",
+          "scope": 1849
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "8da5cb5b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "scope": 1848,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1835,
+                "name": "ParameterList",
+                "src": "99:2:24"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1839,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1836,
+                        "name": "ElementaryTypeName",
+                        "src": "125:7:24"
+                      }
+                    ],
+                    "id": 1837,
+                    "name": "VariableDeclaration",
+                    "src": "125:7:24"
+                  }
+                ],
+                "id": 1838,
+                "name": "ParameterList",
+                "src": "124:9:24"
+              }
+            ],
+            "id": 1839,
+            "name": "FunctionDefinition",
+            "src": "85:49:24"
+          },
+          {
+            "attributes": {
+              "functionSelector": "46f68ee9",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "pushManagement",
+              "scope": 1848,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newOwner_",
+                      "scope": 1844,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1840,
+                        "name": "ElementaryTypeName",
+                        "src": "165:7:24"
+                      }
+                    ],
+                    "id": 1841,
+                    "name": "VariableDeclaration",
+                    "src": "165:17:24"
+                  }
+                ],
+                "id": 1842,
+                "name": "ParameterList",
+                "src": "163:21:24"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1843,
+                "name": "ParameterList",
+                "src": "193:0:24"
+              }
+            ],
+            "id": 1844,
+            "name": "FunctionDefinition",
+            "src": "140:54:24"
+          },
+          {
+            "attributes": {
+              "functionSelector": "5a96ac0a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "pullManagement",
+              "scope": 1848,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1845,
+                "name": "ParameterList",
+                "src": "223:2:24"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1846,
+                "name": "ParameterList",
+                "src": "234:0:24"
+              }
+            ],
+            "id": 1847,
+            "name": "FunctionDefinition",
+            "src": "200:35:24"
+          }
+        ],
+        "id": 1848,
+        "name": "ContractDefinition",
+        "src": "62:175:24"
+      }
+    ],
+    "id": 1849,
+    "name": "SourceUnit",
+    "src": "37:201:24"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.537Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

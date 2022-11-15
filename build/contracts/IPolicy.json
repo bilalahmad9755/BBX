@@ -1,0 +1,542 @@
+{
+  "contractName": "IPolicy",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "policy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renouncePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newPolicy_",
+          "type": "address"
+        }
+      ],
+      "name": "pushPolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pullPolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"policy\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pullPolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newPolicy_\",\"type\":\"address\"}],\"name\":\"pushPolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renouncePolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IPolicy.sol\":\"IPolicy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IPolicy.sol\":{\"keccak256\":\"0x6336d1a8f9cf460769f12fe89607f51424497125dc272feddfaa4fa4110ce51e\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://966bc86eebbc9b9d4b9956c4473c38db5c9e7cb26fc88706a9eb25c1b71ce7f6\",\"dweb:/ipfs/QmYDCvbJ5wf6z9iiUmSWcHJ8Z59z4gP9f131LufF4BgzeT\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0-or-later\n\npragma solidity 0.7.5;\n\n\ninterface IPolicy {\n\n    function policy() external view returns (address);\n\n    function renouncePolicy() external;\n  \n    function pushPolicy( address newPolicy_ ) external;\n\n    function pullPolicy() external;\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/interfaces/IPolicy.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IPolicy.sol",
+    "exportedSymbols": {
+      "IPolicy": [
+        1867
+      ]
+    },
+    "id": 1868,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1850,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "47:22:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1867,
+        "linearizedBaseContracts": [
+          1867
+        ],
+        "name": "IPolicy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0505c8c9",
+            "id": 1855,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "policy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1851,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "112:2:25"
+            },
+            "returnParameters": {
+              "id": 1854,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1853,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1855,
+                  "src": "138:7:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1852,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "138:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "137:9:25"
+            },
+            "scope": 1867,
+            "src": "97:50:25",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a4b23980",
+            "id": 1858,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "renouncePolicy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1856,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "176:2:25"
+            },
+            "returnParameters": {
+              "id": 1857,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:0:25"
+            },
+            "scope": 1867,
+            "src": "153:35:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a15ad077",
+            "id": 1863,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pushPolicy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1861,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1860,
+                  "mutability": "mutable",
+                  "name": "newPolicy_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1863,
+                  "src": "217:18:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1859,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "217:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "215:22:25"
+            },
+            "returnParameters": {
+              "id": 1862,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "246:0:25"
+            },
+            "scope": 1867,
+            "src": "196:51:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5beede08",
+            "id": 1866,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pullPolicy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1864,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "272:2:25"
+            },
+            "returnParameters": {
+              "id": 1865,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "283:0:25"
+            },
+            "scope": 1867,
+            "src": "253:31:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1868,
+        "src": "72:214:25"
+      }
+    ],
+    "src": "47:240:25"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IPolicy.sol",
+      "exportedSymbols": {
+        "IPolicy": [
+          1867
+        ]
+      },
+      "license": "AGPL-3.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 1850,
+        "name": "PragmaDirective",
+        "src": "47:22:25"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1867
+          ],
+          "name": "IPolicy",
+          "scope": 1868
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "0505c8c9",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "policy",
+              "scope": 1867,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1851,
+                "name": "ParameterList",
+                "src": "112:2:25"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1855,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1852,
+                        "name": "ElementaryTypeName",
+                        "src": "138:7:25"
+                      }
+                    ],
+                    "id": 1853,
+                    "name": "VariableDeclaration",
+                    "src": "138:7:25"
+                  }
+                ],
+                "id": 1854,
+                "name": "ParameterList",
+                "src": "137:9:25"
+              }
+            ],
+            "id": 1855,
+            "name": "FunctionDefinition",
+            "src": "97:50:25"
+          },
+          {
+            "attributes": {
+              "functionSelector": "a4b23980",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "renouncePolicy",
+              "scope": 1867,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1856,
+                "name": "ParameterList",
+                "src": "176:2:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1857,
+                "name": "ParameterList",
+                "src": "187:0:25"
+              }
+            ],
+            "id": 1858,
+            "name": "FunctionDefinition",
+            "src": "153:35:25"
+          },
+          {
+            "attributes": {
+              "functionSelector": "a15ad077",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "pushPolicy",
+              "scope": 1867,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newPolicy_",
+                      "scope": 1863,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1859,
+                        "name": "ElementaryTypeName",
+                        "src": "217:7:25"
+                      }
+                    ],
+                    "id": 1860,
+                    "name": "VariableDeclaration",
+                    "src": "217:18:25"
+                  }
+                ],
+                "id": 1861,
+                "name": "ParameterList",
+                "src": "215:22:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1862,
+                "name": "ParameterList",
+                "src": "246:0:25"
+              }
+            ],
+            "id": 1863,
+            "name": "FunctionDefinition",
+            "src": "196:51:25"
+          },
+          {
+            "attributes": {
+              "functionSelector": "5beede08",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "pullPolicy",
+              "scope": 1867,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1864,
+                "name": "ParameterList",
+                "src": "272:2:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1865,
+                "name": "ParameterList",
+                "src": "283:0:25"
+              }
+            ],
+            "id": 1866,
+            "name": "FunctionDefinition",
+            "src": "253:31:25"
+          }
+        ],
+        "id": 1867,
+        "name": "ContractDefinition",
+        "src": "72:214:25"
+      }
+    ],
+    "id": 1868,
+    "name": "SourceUnit",
+    "src": "47:240:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.539Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "contractName": "ReEntrance",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utils/ReEntrance.sol\":\"ReEntrance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utils/ReEntrance.sol\":{\"keccak256\":\"0x14eb539ebe03ac0e6339770380e3114a74878b9584cc43546565309f24efd8d4\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://9d326833ce49758b68d13d29d9fc22d2697e5ed83015f3d9fda25cda667b97c2\",\"dweb:/ipfs/QmY1Z5C21psDDZFpeDMpcFSrjLVEZNYUNznMfDvJZHN4iv\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212209444b137458b92ae9863b4b4fc8e4a8167422f6e28338cd1c6f00e48e78261f064736f6c63430007050033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212209444b137458b92ae9863b4b4fc8e4a8167422f6e28338cd1c6f00e48e78261f064736f6c63430007050033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "61:194:48:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:194:48:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: AGPL-3.0\npragma solidity 0.7.5;\n\ncontract ReEntrance\n{\n    bool private locked;\n\n    modifier reEntrance()\n    {\n        require(!locked, \"Function is Locked!\");\n        locked = true;\n        _;\n        locked = false;\n    }\n}\n",
+  "sourcePath": "/home/kryptomind/Documents/KM_data/BBX/contracts/utils/ReEntrance.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utils/ReEntrance.sol",
+    "exportedSymbols": {
+      "ReEntrance": [
+        4621
+      ]
+    },
+    "id": 4622,
+    "license": "AGPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4600,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:22:48"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 4621,
+        "linearizedBaseContracts": [
+          4621
+        ],
+        "name": "ReEntrance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4602,
+            "mutability": "mutable",
+            "name": "locked",
+            "nodeType": "VariableDeclaration",
+            "scope": 4621,
+            "src": "87:19:48",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 4601,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "87:4:48",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 4619,
+              "nodeType": "Block",
+              "src": "139:114:48",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 4606,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "157:7:48",
+                        "subExpression": {
+                          "id": 4605,
+                          "name": "locked",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4602,
+                          "src": "158:6:48",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "46756e6374696f6e206973204c6f636b656421",
+                        "id": 4607,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "166:21:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0412afec1312fde512cdde76fd545ca29241246bdb1f214d525680bfdb170c6e",
+                          "typeString": "literal_string \"Function is Locked!\""
+                        },
+                        "value": "Function is Locked!"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_0412afec1312fde512cdde76fd545ca29241246bdb1f214d525680bfdb170c6e",
+                          "typeString": "literal_string \"Function is Locked!\""
+                        }
+                      ],
+                      "id": 4604,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "149:7:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 4608,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "149:39:48",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4609,
+                  "nodeType": "ExpressionStatement",
+                  "src": "149:39:48"
+                },
+                {
+                  "expression": {
+                    "id": 4612,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4610,
+                      "name": "locked",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4602,
+                      "src": "198:6:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 4611,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "207:4:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "198:13:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 4613,
+                  "nodeType": "ExpressionStatement",
+                  "src": "198:13:48"
+                },
+                {
+                  "id": 4614,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "221:1:48"
+                },
+                {
+                  "expression": {
+                    "id": 4617,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4615,
+                      "name": "locked",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4602,
+                      "src": "232:6:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "66616c7365",
+                      "id": 4616,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "241:5:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "232:14:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 4618,
+                  "nodeType": "ExpressionStatement",
+                  "src": "232:14:48"
+                }
+              ]
+            },
+            "id": 4620,
+            "name": "reEntrance",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 4603,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:2:48"
+            },
+            "src": "113:140:48",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 4622,
+        "src": "61:194:48"
+      }
+    ],
+    "src": "37:219:48"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/utils/ReEntrance.sol",
+      "exportedSymbols": {
+        "ReEntrance": [
+          4621
+        ]
+      },
+      "license": "AGPL-3.0"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 4600,
+        "name": "PragmaDirective",
+        "src": "37:22:48"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            4621
+          ],
+          "name": "ReEntrance",
+          "scope": 4622
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "locked",
+              "scope": 4621,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bool",
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bool",
+                  "type": "bool"
+                },
+                "id": 4601,
+                "name": "ElementaryTypeName",
+                "src": "87:4:48"
+              }
+            ],
+            "id": 4602,
+            "name": "VariableDeclaration",
+            "src": "87:19:48"
+          },
+          {
+            "attributes": {
+              "name": "reEntrance",
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4603,
+                "name": "ParameterList",
+                "src": "132:2:48"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_0412afec1312fde512cdde76fd545ca29241246bdb1f214d525680bfdb170c6e",
+                                  "typeString": "literal_string \"Function is Locked!\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 4604,
+                            "name": "Identifier",
+                            "src": "149:7:48"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "!",
+                              "prefix": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4602,
+                                  "type": "bool",
+                                  "value": "locked"
+                                },
+                                "id": 4605,
+                                "name": "Identifier",
+                                "src": "158:6:48"
+                              }
+                            ],
+                            "id": 4606,
+                            "name": "UnaryOperation",
+                            "src": "157:7:48"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "46756e6374696f6e206973204c6f636b656421",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"Function is Locked!\"",
+                              "value": "Function is Locked!"
+                            },
+                            "id": 4607,
+                            "name": "Literal",
+                            "src": "166:21:48"
+                          }
+                        ],
+                        "id": 4608,
+                        "name": "FunctionCall",
+                        "src": "149:39:48"
+                      }
+                    ],
+                    "id": 4609,
+                    "name": "ExpressionStatement",
+                    "src": "149:39:48"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4602,
+                              "type": "bool",
+                              "value": "locked"
+                            },
+                            "id": 4610,
+                            "name": "Identifier",
+                            "src": "198:6:48"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 4611,
+                            "name": "Literal",
+                            "src": "207:4:48"
+                          }
+                        ],
+                        "id": 4612,
+                        "name": "Assignment",
+                        "src": "198:13:48"
+                      }
+                    ],
+                    "id": 4613,
+                    "name": "ExpressionStatement",
+                    "src": "198:13:48"
+                  },
+                  {
+                    "id": 4614,
+                    "name": "PlaceholderStatement",
+                    "src": "221:1:48"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4602,
+                              "type": "bool",
+                              "value": "locked"
+                            },
+                            "id": 4615,
+                            "name": "Identifier",
+                            "src": "232:6:48"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "66616c7365",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "false"
+                            },
+                            "id": 4616,
+                            "name": "Literal",
+                            "src": "241:5:48"
+                          }
+                        ],
+                        "id": 4617,
+                        "name": "Assignment",
+                        "src": "232:14:48"
+                      }
+                    ],
+                    "id": 4618,
+                    "name": "ExpressionStatement",
+                    "src": "232:14:48"
+                  }
+                ],
+                "id": 4619,
+                "name": "Block",
+                "src": "139:114:48"
+              }
+            ],
+            "id": 4620,
+            "name": "ModifierDefinition",
+            "src": "113:140:48"
+          }
+        ],
+        "id": 4621,
+        "name": "ContractDefinition",
+        "src": "61:194:48"
+      }
+    ],
+    "id": 4622,
+    "name": "SourceUnit",
+    "src": "37:219:48"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-03-22T12:53:20.730Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

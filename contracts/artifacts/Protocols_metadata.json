@@ -1,0 +1,394 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_BBX",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_DT",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_maxBuyingLimit",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipPulled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipPushed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "BBXaddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DTaddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_vesting",
+						"type": "uint256"
+					}
+				],
+				"name": "createProtocol",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxLimitPerDay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "protocolInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vesting",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pullManagement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseProtocol",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner_",
+						"type": "address"
+					}
+				],
+				"name": "pushManagement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "lastPurchase",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "pkgCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Documents/BBX/contracts/ProtocolsV2.sol": "Protocols"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Documents/BBX/contracts/BBX_Token.sol": {
+			"keccak256": "0xda479f3085dc70a89002bd0c37a6c4257c0eb6a1f2df193ed8a94659c6cab7de",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://af78e90c58f50c8b82aba0a09bbe0c776e3267748d1326bc5e155838a5df44b0",
+				"dweb:/ipfs/QmavJGXZqv3QC5bCWBDJaf57wo7L9fkNXf2PrZzKBRHVFp"
+			]
+		},
+		"Documents/BBX/contracts/OlympusERC20Token.sol": {
+			"keccak256": "0xfef81183209ff205619d96eb1407516eea299ccb10894b7d6147401fe62537b6",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://d8468b7e61686973208e8863d6d03e339b408ca901a3ba52d703cf15ed487c6a",
+				"dweb:/ipfs/QmT3Mxp2RvrAKs89GL38FqRXE8rsidZdpxb8CpKRvzvGzt"
+			]
+		},
+		"Documents/BBX/contracts/ProtocolsV2.sol": {
+			"keccak256": "0x0649c399b0ff27d16391deccd16034995d77e48a7d1ba8bb6c7d24ce327d088d",
+			"urls": [
+				"bzz-raw://c295b33a4923ae0b25c97bc79a7d56850ba75dabf66fa06a6ab325a61a08ae05",
+				"dweb:/ipfs/QmXHnp3WLSrpYfJ5LYExH9gZ1fPZg5udiyMVUK9wwK8xY3"
+			]
+		},
+		"Documents/BBX/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0xdddce2d7e57e1ba79e62f11cb6ba5d469c163d3728f4ee6ac08be094aac2a835",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://92f9b0816b1c8b0e163c8aa82ddede10349219c5238db50850dca6706b57b208",
+				"dweb:/ipfs/QmbWuefpwLJAssQCPgfHm45AwSkjphid6eMbohxV8tMJo2"
+			]
+		},
+		"Documents/BBX/contracts/interfaces/IERC2612Permit.sol": {
+			"keccak256": "0xf30d6bf05718d87a5438070329c6f636246ad0fa6db37a38291251786a940a42",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://182813fd3017f36f9218c6f8ab04a73a320c7ebec81deefffacca40be9e08883",
+				"dweb:/ipfs/QmdsUiTCbQmA3auruBLyEHdMqNq4TdAsP563uBqR5R8kh4"
+			]
+		},
+		"Documents/BBX/contracts/interfaces/IOwnable.sol": {
+			"keccak256": "0x17b34c3d76f51cb6100b7e9b0d133b1b69aab2b44b00e96623184fbecd17510f",
+			"license": "AGPL-3.0",
+			"urls": [
+				"bzz-raw://ecbe3d35bd7c3e00492c7e27db7fdf30772db58ad3603bccd1675064946b5032",
+				"dweb:/ipfs/QmVUyFSXTM7v5DE3Upkogtc1cM8js2fFYh5or1UJmxgDfX"
+			]
+		},
+		"Documents/BBX/contracts/interfaces/iBBX.sol": {
+			"keccak256": "0x06d7d602e0d2aceffc57be67361d324f75ae5d698de501801c89def68b350251",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://90d54f2af2b0d79e051b0b8acfa77d137182f877372ba0fe607267f0d912e629",
+				"dweb:/ipfs/QmeQLt2vZLfdTg7RoxAgr75AS1TfEqiDKFasEysaLjf2Gm"
+			]
+		},
+		"Documents/BBX/contracts/interfaces/iDT.sol": {
+			"keccak256": "0x0bf2759471df86dd03ccc53e29ed3d317477a0b71bdd58dd1527b532ee496a59",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://6f5bc062e71df2bdad2e348d7b52e1110e0442e706822443f05fc9aa578e31c2",
+				"dweb:/ipfs/QmUordGSZ2SUY5ppmQkyTq1FLQYZn2dECti8iN1KLFBsRq"
+			]
+		},
+		"Documents/BBX/contracts/libraries/Counters.sol": {
+			"keccak256": "0xa64fa3ec87f9b620eee9a0a0c70a59b3299a950fec2cfc94d34b1d5a000e9340",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://56f1f7c3511d528032cbe946cce28cc909d59b9d8bef39f05c5af3d1ede41993",
+				"dweb:/ipfs/QmYYgFJS3HNAotcVDLrfi87YWcQqUehPBP5U2NCnMnP6Lq"
+			]
+		},
+		"Documents/BBX/contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x85d4cb106cb650126ca9a9248069c54db7a7b688aa3961bc96bb42ca4598de5e",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://3e7f22c2dc260c3b4ee94fa635391ba9cc9d29a2981cc8622315b632e545f31d",
+				"dweb:/ipfs/Qmdo32msUbyyih1ko8NYShaqZSvLD3RrD7TL6YfKcFALM6"
+			]
+		},
+		"Documents/BBX/contracts/utils/ERC20.sol": {
+			"keccak256": "0x8931efceb1fbf6c9c566b03b00be5840de3e0b25984feab7cf1df6d7dd50f729",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://5b8ef4edec0bc9fc4b0ea330d697c4db65e460f12eaf32a3c521622d9b66bba6",
+				"dweb:/ipfs/Qmd4j3PTN415exXxB8bwh9o12XnfxUhgcXmZwuhKiFLPB4"
+			]
+		},
+		"Documents/BBX/contracts/utils/ERC20Permit.sol": {
+			"keccak256": "0xff165662e33d6bb05f34c3c30ab0b3d24a180b4491d32e1cbdac8d308c243a70",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://ae0e61d1f3aee477209aa7b7d34f5569ca37d7135c00ccb2bddc4660ec9ee767",
+				"dweb:/ipfs/QmYRpZ2yuqWMwo4dhJAoDp5WbmABSzofTKaWLuuo1chg9i"
+			]
+		},
+		"Documents/BBX/contracts/utils/Ownable.sol": {
+			"keccak256": "0x9c0535b6af5a6f3a1df50a3882e4cfa78d1ed05a13f88a383c5e8dd380ce98d1",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://bd5e8afcbfd56beb336ab28788e20256cfdca00abce70aa3c86c97b0c2ae7a74",
+				"dweb:/ipfs/QmRQxcySKSAqK6aUBgefKfqWhkby6p4BmkU5yXpLEiqNrs"
+			]
+		},
+		"Documents/BBX/contracts/utils/VaultOwned.sol": {
+			"keccak256": "0x54a2267f84e44bbe450d12bdc514d5f16e4465c4226bafe02de5a650d4f6b196",
+			"license": "AGPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://1dc56c04dc871c0771a093b71208981aa46ae985ed5b64a4a5c3293cc71bee66",
+				"dweb:/ipfs/QmUTZFXLvV6tKiS4qQvUPa7QCM3729M1BM8Xn1JDGBVTRs"
+			]
+		}
+	},
+	"version": 1
+}
